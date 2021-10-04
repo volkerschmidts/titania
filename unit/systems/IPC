@@ -1,0 +1,143 @@
+/*
+ * StanIPC.h
+ *
+ *  Created on: 11.08.2018
+ *      Author: froth
+ */
+
+#ifndef UNIT_SYSTEMS_IPC_
+#define UNIT_SYSTEMS_IPC_
+
+/* Molecule definitions */
+
+#define MOLNAME_TITANIA_TEST__ "StanICP"
+#define NOA_TITANIA_TEST__ 29
+
+/* Structure definitions */
+
+#define STRNAME_TITANIA_TEST__ "StrucIPC"
+#define NUMBOND_TITANIA_TEST_IPC__ 30
+#define NUMANGL_TITANIA_TEST_IPC__ 61
+#define NUMTORS_TITANIA_TEST_IPC__ 102
+#define NUMRDCS_TITANIA_TEST_IPC__ 38
+/* Atom definitions */
+
+#define A01_TITANIA_TEST__ "C1"
+#define A01_x_TITANIA_TEST__  -0.073
+#define A01_y_TITANIA_TEST__   2.395
+#define A01_z_TITANIA_TEST__   0.114
+#define A02_TITANIA_TEST__ "C2"
+#define A02_x_TITANIA_TEST__  -0.750
+#define A02_y_TITANIA_TEST__   1.046
+#define A02_z_TITANIA_TEST__   0.423
+#define A03_TITANIA_TEST__ "C3"
+#define A03_x_TITANIA_TEST__  -1.326
+#define A03_y_TITANIA_TEST__   1.008
+#define A03_z_TITANIA_TEST__   1.865
+#define A04_TITANIA_TEST__ "C4"
+#define A04_x_TITANIA_TEST__  -1.384
+#define A04_y_TITANIA_TEST__   2.392
+#define A04_z_TITANIA_TEST__   2.584
+#define A05_TITANIA_TEST__ "C5"
+#define A05_x_TITANIA_TEST__  -0.628
+#define A05_y_TITANIA_TEST__   3.500
+#define A05_z_TITANIA_TEST__   1.839
+#define A06_TITANIA_TEST__ "C6"
+#define A06_x_TITANIA_TEST__   0.761
+#define A06_y_TITANIA_TEST__   3.004
+#define A06_z_TITANIA_TEST__   1.306
+#define A07_TITANIA_TEST__ "C7"
+#define A07_x_TITANIA_TEST__  -1.123
+#define A07_y_TITANIA_TEST__   3.513
+#define A07_z_TITANIA_TEST__   0.369
+#define A08_TITANIA_TEST__ "C8"
+#define A08_x_TITANIA_TEST__   1.638
+#define A08_y_TITANIA_TEST__   4.171
+#define A08_z_TITANIA_TEST__   0.825
+#define A09_TITANIA_TEST__ "C9"
+#define A09_x_TITANIA_TEST__   1.631
+#define A09_y_TITANIA_TEST__   2.121
+#define A09_z_TITANIA_TEST__   2.205
+#define A10_TITANIA_TEST__ "C10"
+#define A10_x_TITANIA_TEST__   0.122
+#define A10_y_TITANIA_TEST__  -0.178
+#define A10_z_TITANIA_TEST__   0.118
+#define A11_TITANIA_TEST__ "H1"
+#define A11_x_TITANIA_TEST__   0.421
+#define A11_y_TITANIA_TEST__   2.366
+#define A11_z_TITANIA_TEST__  -0.864
+#define A12_TITANIA_TEST__ "H2"
+#define A12_x_TITANIA_TEST__  -1.624
+#define A12_y_TITANIA_TEST__   0.986
+#define A12_z_TITANIA_TEST__  -0.236
+#define A13_TITANIA_TEST__ "H3"
+#define A13_x_TITANIA_TEST__  -0.701
+#define A13_y_TITANIA_TEST__   0.336
+#define A13_z_TITANIA_TEST__   2.464
+#define A14_TITANIA_TEST__ "H4a"
+#define A14_x_TITANIA_TEST__  -2.436
+#define A14_y_TITANIA_TEST__   2.687
+#define A14_z_TITANIA_TEST__   2.669
+#define A15_TITANIA_TEST__ "H4s"
+#define A15_x_TITANIA_TEST__  -1.004
+#define A15_y_TITANIA_TEST__   2.290
+#define A15_z_TITANIA_TEST__   3.607
+#define A16_TITANIA_TEST__ "H5"
+#define A16_x_TITANIA_TEST__  -0.642
+#define A16_y_TITANIA_TEST__   4.439
+#define A16_z_TITANIA_TEST__   2.403
+#define A17_TITANIA_TEST__ "H7a"
+#define A17_x_TITANIA_TEST__  -2.170
+#define A17_y_TITANIA_TEST__   3.246
+#define A17_z_TITANIA_TEST__   0.200
+#define A18_TITANIA_TEST__ "H7s"
+#define A18_x_TITANIA_TEST__  -0.913
+#define A18_y_TITANIA_TEST__   4.444
+#define A18_z_TITANIA_TEST__  -0.156
+#define A19_TITANIA_TEST__ "H8a"
+#define A19_x_TITANIA_TEST__   2.501
+#define A19_y_TITANIA_TEST__   3.797
+#define A19_z_TITANIA_TEST__   0.265
+#define A20_TITANIA_TEST__ "H8b"
+#define A20_x_TITANIA_TEST__   2.024
+#define A20_y_TITANIA_TEST__   4.739
+#define A20_z_TITANIA_TEST__   1.678
+#define A21_TITANIA_TEST__ "H8c"
+#define A21_x_TITANIA_TEST__   1.110
+#define A21_y_TITANIA_TEST__   4.874
+#define A21_z_TITANIA_TEST__   0.178
+#define A22_TITANIA_TEST__ "H9a"
+#define A22_x_TITANIA_TEST__   2.017
+#define A22_y_TITANIA_TEST__   2.709
+#define A22_z_TITANIA_TEST__   3.046
+#define A23_TITANIA_TEST__ "H9b"
+#define A23_x_TITANIA_TEST__   2.499
+#define A23_y_TITANIA_TEST__   1.741
+#define A23_z_TITANIA_TEST__   1.656
+#define A24_TITANIA_TEST__ "H9c"
+#define A24_x_TITANIA_TEST__   1.112
+#define A24_y_TITANIA_TEST__   1.262
+#define A24_z_TITANIA_TEST__   2.627
+#define A25_TITANIA_TEST__ "H10a"
+#define A25_x_TITANIA_TEST__   0.413
+#define A25_y_TITANIA_TEST__  -0.194
+#define A25_z_TITANIA_TEST__  -0.937
+#define A26_TITANIA_TEST__ "H10b"
+#define A26_x_TITANIA_TEST__   1.040
+#define A26_y_TITANIA_TEST__  -0.194
+#define A26_z_TITANIA_TEST__   0.712
+#define A27_TITANIA_TEST__ "H10c"
+#define A27_x_TITANIA_TEST__  -0.427
+#define A27_y_TITANIA_TEST__  -1.102
+#define A27_z_TITANIA_TEST__   0.322
+#define A28_TITANIA_TEST__ "O3"
+#define A28_x_TITANIA_TEST__  -2.628
+#define A28_y_TITANIA_TEST__   0.404
+#define A28_z_TITANIA_TEST__   1.761
+#define A29_TITANIA_TEST__ "H3o"
+#define A29_x_TITANIA_TEST__  -2.955
+#define A29_y_TITANIA_TEST__   0.204
+#define A29_z_TITANIA_TEST__   2.647
+
+
+#endif /* UNIT_SYSTEMS_IPC_ */

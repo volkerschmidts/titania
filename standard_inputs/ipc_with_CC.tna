@@ -1,0 +1,96 @@
+##########################################
+# This is an standard input file for ipc #
+#   using 14 rdc datasets. The datasets  #
+# ipcXX.csv were generated synthetically #
+#   by determination of the orientation  #
+# using RDC@hotFCHT and back calculation #
+#               of all RDCs.             #
+#                                        #
+#  Addionally to the ipc.tna input file  #
+#  this datasets contain CC couplings.   #
+##########################################
+
+include = stan/keywords.stan
+
+csv2rdc[PELG_m_300]  = rdcs/IPC/ipc01.csv
+csv2rdc[PELG_p_300]  = rdcs/IPC/ipc02.csv
+csv2rdc[PPDA_m_300]  = rdcs/IPC/ipc03.csv
+csv2rdc[PPDA_m_383]  = rdcs/IPC/ipc04.csv
+csv2rdc[PPDA_p_300]  = rdcs/IPC/ipc05.csv
+csv2rdc[PPDA_p_383]  = rdcs/IPC/ipc06.csv
+csv2rdc[PPLA_m_300]  = rdcs/IPC/ipc07.csv
+csv2rdc[PPLA_m_383]  = rdcs/IPC/ipc08.csv
+csv2rdc[PPLA_p_300]  = rdcs/IPC/ipc09.csv
+csv2rdc[PPLA_p_383]  = rdcs/IPC/ipc10.csv
+csv2rdc[PBDG_p_290]  = rdcs/IPC/ipc11.csv
+csv2rdc[JR_BT_002HT] = rdcs/IPC/JR_BT_002_309K.csv
+csv2rdc[JR_BT_002LT] = rdcs/IPC/JR_BT_002_305K.csv
+
+xyzcoordinates[isominus] =
+29
+minus_isopinocampheol
+C1     -0.073  2.395  0.114   #C1
+C2     -0.750  1.046  0.423   #C2
+C3     -1.326  1.008  1.865   #C3
+C4     -1.384  2.392  2.584   #C4
+C5     -0.628  3.500  1.839   #C5
+C6      0.761  3.004  1.306   #C6
+C7     -1.123  3.513  0.369   #C7
+C8      1.638  4.171  0.825   #C8
+C9      1.631  2.121  2.205   #C9
+C10     0.122 -0.178  0.118   #C10
+H2     -1.624  0.986 -0.236   #H2
+H3     -0.701  0.336  2.464   #H3
+H4a    -1.004  2.290  3.607   #H4s 
+H4s    -2.436  2.687  2.669   #H4a
+H5     -0.642  4.439  2.403   #H5
+H7s    -0.913  4.444 -0.156   #H7s
+H7a    -2.170  3.246  0.200   #H7a
+H1      0.421  2.366 -0.864   #H1
+O3     -2.628  0.404  1.761   #O3
+H3o    -2.955  0.204  2.647   #H3o
+H8a     2.501  3.797  0.265   #H8a
+H8b     2.024  4.739  1.678   #H8b
+H8c     1.110  4.874  0.178   #H8c
+H9a     2.017  2.709  3.046   #H9a
+H9b     2.499  1.741  1.656   #H9b
+H9c     1.112  1.262  2.627   #H9c
+H10a    0.413 -0.194 -0.937   #H10a
+H10b    1.040 -0.194  0.712   #H10b
+H10c   -0.427 -1.102  0.322   #H10c
+
+connectivity[isominus] =
+29
+minus_isopinocampheol
+C10  H10a H10b H10c C2
+C1   H1   C2   C6   C7
+C2   H2   C1   C3   C10
+C3   O3   H3   C2   C4
+C4   H4a  H4s  C3   C5
+C5   H5   C4   C6   C7
+C6   C5   C1   C8   C9
+C7   C5   C1   H7a  H7s
+C8   C6   H8a  H8b  H8c
+C9   C6   H9a  H9b  H9c
+O3   C3   H3o
+H1   C1
+H2   C2
+H3   C3
+H3o  O3
+H4a  C4
+H4s  C4
+H5   C5
+H7a  C7
+H7s  C7
+H8a  C8
+H8b  C8
+H8c  C8
+H9a  C9
+H9b  C9
+H9c  C9
+H10a C10
+H10b C10
+H10c C10
+
+ring C1 C2 C3 C4 C5 C6
+ring C1 C6 C5 C7

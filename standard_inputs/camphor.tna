@@ -1,0 +1,88 @@
+############################################
+#    This is an standard input file for    #
+#    camphor using 11 rdc datasets. The    #
+#  datasets camphorXX.csv were generated   #
+#   synthetically following the protocol   #
+#          described in ipc.tna.           #
+############################################
+
+include = stan/keywords.stan
+
+csv2rdc[PBDG_p_290] = rdcs/Camphor/camphor01.csv
+csv2rdc[PELG_m_300] = rdcs/Camphor/camphor02.csv
+csv2rdc[PELG_p_300] = rdcs/Camphor/camphor03.csv
+csv2rdc[PPDA_m_300] = rdcs/Camphor/camphor04.csv
+csv2rdc[PPDA_m_383] = rdcs/Camphor/camphor05.csv
+csv2rdc[PPDA_p_300] = rdcs/Camphor/camphor06.csv
+csv2rdc[PPDA_p_383] = rdcs/Camphor/camphor07.csv
+csv2rdc[PPLA_m_300] = rdcs/Camphor/camphor08.csv
+csv2rdc[PPLA_m_383] = rdcs/Camphor/camphor09.csv
+csv2rdc[PPLA_p_300] = rdcs/Camphor/camphor10.csv
+csv2rdc[PPLA_p_383] = rdcs/Camphor/camphor11.csv
+
+
+xyzcoordinates[camphor]=
+27
+Camphor_xyz
+C1    -1.443430   0.058900   0.287160  #C1
+C2    -0.294680  -0.506870  -0.548870  #C2
+C3    -0.077090   0.604330  -1.635070  #C3
+C4     0.575370   1.786940  -0.858300  #C4
+C5     0.591970   1.268630   0.598370  #C5
+C6    -0.875470   1.244580   1.072210  #C6
+C7     0.918360  -0.251630   0.421790  #C7
+C8     0.841610  -1.068240   1.724740  #C8
+C9     2.293970  -0.518680  -0.207340  #C9
+C10   -0.528660  -1.900730  -1.099440  #C10
+O1    -2.588740  -0.338590   0.316770  #O1
+H3a   -1.017690   0.879190  -2.118290  #H3a
+H3s    0.578620   0.215770  -2.417020  #H3s
+H4s    0.000230   2.711370  -0.946860  #H4a
+H4a    1.581740   1.998890  -1.222840  #H4s
+H5     1.267170   1.809640   1.263620  #H5
+H6s   -1.431460   2.158220   0.845990  #H6a
+H6a   -0.985700   1.057640   2.143250  #H6s
+H8A   -0.124060  -1.007320   2.230210  #H8A
+H8B    1.033020  -2.125670   1.521970  #H8B
+H8C    1.606280  -0.727410   2.429510  #H8C
+H9A    2.443720  -0.022090  -1.166100  #H9A
+H9B    3.082760  -0.174900   0.469430  #H9B
+H9C    2.443410  -1.590770  -0.363500  #H9C
+H10A  -1.420940  -1.920210  -1.730630  #H10A
+H10B  -0.679100  -2.629240  -0.298500  #H10B
+H10C   0.320240  -2.227740  -1.705820  #H10C
+
+connectivity[camphor] =
+27
+Camphor_xyz
+C1    C2    O1    C6
+C2    C10   C3    C1    C7
+C3    C2    C4    H3a   H3s
+C4    C3    C5    H4a   H4s
+C5    C7    C4    C6    H5
+C6    C1    C5    H6a   H6s
+C7    C2    C5    C8    C9
+C8    C7    H8A   H8B   H8C
+C9    C7    H9A   H9B   H9C
+C10   H10A  H10B  H10C  C2
+O1    C1
+H3a   C3
+H3s   C3
+H4a   C4
+H4s   C4
+H5    C5
+H6a   C6
+H6s   C6
+H8A   C8
+H8B   C8
+H8C   C8
+H9A   C9
+H9B   C9
+H9C   C9
+H10A  C10
+H10B  C10
+H10C  C10
+
+
+ring C1 C2 C3 C4 C5 C6
+ring C2 C3 C4 C5 C7

@@ -1,0 +1,86 @@
+############################################
+# This is an standard input file for beta  #
+#     pinen using 11 rdc datasets. The     #
+#   datasets bPinenXX.csv were generated   #
+#   synthetically following the protocol   #
+#          described in ipc.tna.           #
+############################################
+
+include = stan/keywords.stan
+
+csv2rdc[PBDG_p_290] = rdcs/betaPinen/bPinen01.csv
+csv2rdc[PELG_m_300] = rdcs/betaPinen/bPinen02.csv
+csv2rdc[PELG_p_300] = rdcs/betaPinen/bPinen03.csv
+csv2rdc[PPDA_m_300] = rdcs/betaPinen/bPinen04.csv
+csv2rdc[PPDA_m_383] = rdcs/betaPinen/bPinen05.csv
+csv2rdc[PPDA_p_300] = rdcs/betaPinen/bPinen06.csv
+csv2rdc[PPDA_p_383] = rdcs/betaPinen/bPinen07.csv
+csv2rdc[PPLA_m_300] = rdcs/betaPinen/bPinen08.csv
+csv2rdc[PPLA_m_383] = rdcs/betaPinen/bPinen09.csv
+csv2rdc[PPLA_p_300] = rdcs/betaPinen/bPinen10.csv
+csv2rdc[PPLA_p_383] = rdcs/betaPinen/bPinen11.csv
+
+
+xyzcoordinates[bpinen]=
+26
+minus_bpinen
+  C1            -1.992713      1.447387      0.090026  #C1
+  C2            -2.783948      0.266344     -0.394512  #C2
+  C3            -2.033479     -1.054174     -0.320932  #C3
+  C4            -0.488959     -0.890053     -0.318503  #C4
+  C5            -0.077608      0.518081      0.128486  #C5
+  C6            -0.698806      1.619874     -0.799094  #C6
+  C7            -1.046963      0.995631      1.243328  #C7
+  C8            -0.054690      2.996543     -0.595580  #C8
+  C9            -0.809124      1.363273     -2.297828  #C9
+  C10           -4.035044      0.362146     -0.836658  #C10
+  H1            -2.618683      2.329649      0.234480  #H1
+  H3s           -2.333175     -1.548448      0.607934  #H3a
+  H3a           -2.354303     -1.719557     -1.123962  #H3s
+  H4a           -0.049374     -1.625042      0.360675  #H4a
+  H4s           -0.075331     -1.102575     -1.306795  #H4s
+  H5             0.996961      0.577028      0.318198  #H5
+  H7s           -1.428615      0.248304      1.940070  #H7a
+  H7a           -0.653615      1.833601      1.813884  #H7s
+  H8A            0.071260      3.264851      0.453226  #H8A
+  H8B           -0.667195      3.771079     -1.065498  #H8B
+  H8C            0.931862      3.028772     -1.066241  #H8C
+  H9A           -1.270329      0.408202     -2.543883  #H9A
+  H9B            0.179900      1.391660     -2.764563  #H9B
+  H9C           -1.413984      2.142261     -2.769861  #H9A
+  H10a          -4.576485     -0.501967     -1.205017  #H10a
+  H10s          -4.563521      1.308169     -0.838598  #H10s
+
+connectivity[bpinen] =
+26
+minus_bpinen
+  C1      C2     C6     C7     H1
+  C2      C1     C3     C10
+  C3      C2     C4     H3a    H3s
+  C4      C3     C5     H4a    H4s
+  C5      C4     C6     C7     H5
+  C6      C1     C5     C8     C9
+  C7      C1     C5     H7a    H7s
+  C8      C6     H8A    H8B    H8C
+  C9      C6     H9A    H9B    H9C
+  C10     C2     H10a   H10s
+  H1      C1
+  H3a     C3
+  H3s     C3
+  H4a     C4
+  H4s     C4
+  H5      C5
+  H7a     C7
+  H7s     C7
+  H8A     C8
+  H8B     C8
+  H8C     C8
+  H9A     C9
+  H9B     C9
+  H9C     C9
+  H10a    C10
+  H10s    C10
+
+
+ring C1 C2 C3 C4 C5 C6
+ring C1 C6 C5 C7

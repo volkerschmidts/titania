@@ -1,0 +1,95 @@
+############################################
+#    This is an standard input file for    #
+# camphorsultam using 11 rdc datasets. The #
+#     datasets camphorsultam_XX.csv were   #
+#   generated synthetically following the  #
+#      protocol described in ipc.tna.      #
+############################################
+
+include = stan/keywords.stan
+
+csv2rdc[PBDG_p_290] = rdcs/Camphorsultam/camphorsultam01.csv
+csv2rdc[PELG_m_300] = rdcs/Camphorsultam/camphorsultam02.csv
+csv2rdc[PELG_p_300] = rdcs/Camphorsultam/camphorsultam03.csv
+csv2rdc[PPDA_m_300] = rdcs/Camphorsultam/camphorsultam04.csv
+csv2rdc[PPDA_m_383] = rdcs/Camphorsultam/camphorsultam05.csv
+csv2rdc[PPDA_p_300] = rdcs/Camphorsultam/camphorsultam06.csv
+csv2rdc[PPDA_p_383] = rdcs/Camphorsultam/camphorsultam07.csv
+csv2rdc[PPLA_m_300] = rdcs/Camphorsultam/camphorsultam08.csv
+csv2rdc[PPLA_m_383] = rdcs/Camphorsultam/camphorsultam09.csv
+csv2rdc[PPLA_p_300] = rdcs/Camphorsultam/camphorsultam10.csv
+csv2rdc[PPLA_p_383] = rdcs/Camphorsultam/camphorsultam11.csv
+
+xyzcoordinates[camphorsultam]=
+31
+Camphorsultam
+C1             6.759656      7.842750      3.075184   # C1
+C2             6.935021      9.284690      3.528257   # C2
+S3             7.495184      9.187822      5.288033   # S3
+N4             7.828958      7.514849      5.307761   # N4
+C5             6.922988      6.902213      4.328664   # C5
+C6             7.362427      5.550712      3.716023   # C6
+C7             7.218936      5.810086      2.199769   # C7
+C8             5.712398      6.006310      1.896639   # C8
+C9             5.408637      7.431882      2.454763   # C9
+C10            7.788455      7.248655      2.042323   # C10
+C11            9.278121      7.381571      2.399805   # C11
+C12            7.641565      7.836074      0.629136   # C12
+O3A            6.332830      9.430271      6.126619   # O3A
+O3S            8.742599      9.903535      5.517473   # O3S
+H2s            6.011408      9.859831      3.542236   # H2a
+H2a            7.701922      9.833814      2.985011   # H2s
+H4             8.809838      7.407349      5.071399   # H4
+H5             5.959976      6.804891      4.831163   # H5
+H6a            8.385124      5.295459      3.993665   # H6a
+H6s            6.729381      4.730735      4.055783   # H6s
+H7             7.695346      5.048216      1.581430   # H7
+H8a            5.107132      5.236611      2.377036   # H8a
+H8s            5.510360      5.947570      0.827116   # H8s
+H9s            5.098358      8.116644      1.665465   # H9a
+H9a            4.617641      7.431916      3.205726   # H9s
+H11A           9.882298      6.963857      1.591065   # H11A
+H11B           9.578215      6.863549      3.307239   # H11B
+H11C           9.568940      8.429281      2.505900   # H11C
+H12A           7.957545      8.882907      0.614539   # H12A
+H12B           6.629634      7.794657      0.234516   # H12B
+H12C           8.288608      7.297373     -0.066969   # H12C
+
+connectivity[camphorsultam] =
+31
+Camphorsultam
+C1     C2     C5     C9      C10
+C2     C1     S3     H2a     H2s
+S3     C2     O3A    O3S     N4
+N4     S3     C5     H4
+C5     C1     N4     C6      H5
+C6     C5     C7     H6s     H6a
+C7     C6     C10    C8      H7
+C8     C7     C9     H8a     H8s
+C9     C1     C8     H9a     H9s
+C10    C1     C7     C11     C12
+C11    C10    H11A   H11B    H11C
+C12    C10    H12A   H12B    H12C
+O3A    S3
+O3S    S3
+H2a    C2
+H2s    C2
+H4     N4
+H5     C5
+H6s    C6
+H6a    C6
+H7     C7
+H8a    C8
+H8s    C8
+H9s    C9
+H9a    C9
+H11A   C11
+H11B   C11
+H11C   C11
+H12A   C12
+H12B   C12
+H12C   C12
+
+ring C1 C2 S3 N4 C5
+ring C1 C5 C6 C7 C8 C9
+ring C1 C5 C6 C7 C10

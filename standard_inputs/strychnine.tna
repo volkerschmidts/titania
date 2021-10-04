@@ -1,0 +1,133 @@
+############################################
+#    This is an standard input file for    #
+#   strychnine using 11 rdc datasets. The  #
+#       datasets strychnineXX.csv were     #
+#   generated synthetically following the  #
+#      protocol described in ipc.tna.      #
+############################################
+
+include = stan/keywords.stan
+
+csv2rdc[stry01] = rdcs/Strychnine/strychnine01.csv
+csv2rdc[stry02] = rdcs/Strychnine/strychnine02.csv
+csv2rdc[stry03] = rdcs/Strychnine/strychnine03.csv
+csv2rdc[stry04] = rdcs/Strychnine/strychnine04.csv
+csv2rdc[stry05] = rdcs/Strychnine/strychnine05.csv
+csv2rdc[stry06] = rdcs/Strychnine/strychnine06.csv
+csv2rdc[stry07] = rdcs/Strychnine/strychnine07.csv
+csv2rdc[stry08] = rdcs/Strychnine/strychnine08.csv
+csv2rdc[stry09] = rdcs/Strychnine/strychnine09.csv
+csv2rdc[stry10] = rdcs/Strychnine/strychnine10.csv
+csv2rdc[stry00] = rdcs/Strychnine/strychnine11.csv
+
+
+xyzcoordinates[strychnine] =
+47
+strychnine_predict
+  O12     5.245346     -0.167644     12.026097  #O12
+  O10     9.849454     -0.090382     11.006911  #O10
+  N9      8.217212      1.003884      9.836469  #N9 
+  N19     4.465435      3.451042      8.805220  #N19
+  C16     5.839694      3.831074      9.248096  #C16
+  C15     5.874527      4.156190     10.737313  #C15
+  C14     5.421061      2.915433     11.520501  #C14 
+  C13     6.538402      1.869014     11.350757  #C13 
+  C8      6.816099      1.495866      9.886402  #C8  
+  C5      9.016816      1.928991      9.129324  #C5  
+  C4     10.396776      1.922197      8.950244  #C4  
+  C3     10.964775      2.971839      8.231327  #C3  
+  C2     10.183186      3.994160      7.703280  #C2   
+  C1      8.799897      3.975993      7.876726  #C1  
+  C6      8.216810      2.940229      8.589145  #C6  
+  C7      6.756055      2.645654      8.830766  #C7  
+  C17     6.024906      2.186699      7.546500  #C17 
+  C18     4.556030      2.258269      7.944084  #C18 
+  C20     3.494458      3.312584      9.900022  #C20 
+  C21     4.046785      2.474822     11.028101  #C21 
+  C22     3.440211      1.386005     11.497153  #C22 
+  C23     4.068291      0.479954     12.520888  #C23 
+  C12     6.459585      0.567896     12.167882  #C12 
+  C11     7.578358     -0.405886     11.726258  #C11 
+  C10     8.672056      0.177185     10.841299  #C10 
+  H16     6.157676      4.711484      8.680058  #H16 
+  H15b    5.237946      5.017482     10.948368  #H15a
+  H15a    6.888579      4.439252     11.026902  #H15b
+  H14     5.349271      3.159061     12.587131  #H14 
+  H13     7.445030      2.367612     11.714589  #H13 
+  H8      6.140520      0.690119      9.593914  #H8  
+  H4     10.999004      1.132777      9.369913  #H4  
+  H3     12.037755      2.987230      8.085351  #H3  
+  H2     10.647356      4.801415      7.151290  #H2  
+  H1      8.191457      4.766209      7.452906  #H1  
+  H17a    6.236259      2.908359      6.753831  #H17a
+  H17b    6.339039      1.203025      7.196782  #H17b
+  H18a    3.888826      2.344778      7.082957  #H18a
+  H18b    4.267503      1.349594      8.490838  #H18b
+  H20b    2.580546      2.872307      9.499828  #H20b
+  H20a    3.223475      4.309801     10.260581  #H20a
+  H22     2.477138      1.091060     11.092152  #H22 
+  H23a    4.313224      1.030364     13.439997  #H23b
+  H23b    3.383950     -0.323194     12.794769  #H23a
+  H12     6.584944      0.821367     13.228711  #H12 
+  H11b    8.075233     -0.862545     12.578666  #H11a
+  H11a    7.091047     -1.209628     11.167702  #H11b
+
+
+connectivity[strychnine] =
+47
+strychnine_predict
+C1   C2   C6   H1
+C2   C1   C3   H2
+C3   C2   C4   H3
+C4   C3   C5   H4
+C5   C4   C6   N9
+C6   C5   C1   C7
+C7   C6   C8   C17  C16
+C8   C7   N9   C13  H8
+N9   C5   C8   C10
+C10  N9   C11  O10
+O10  C10
+C11  C10  C12  H11a H11b
+C12  C11  C13  H12  O12
+O12  C12  C23
+C13  C8   C12  C14  H13
+C14  C13  C15  C21  H14
+C15  C14  C16  H15a H15b
+C16  C7   C15  N19  H16
+C17  C7   C18  H17a H17b
+C18  C17  N19  H18a H18b
+N19  C16  C18  C20
+C20  N19  C21  H20a H20b
+C21  C14  C20  C22
+C22  C21  C23  H22
+C23  O12  C22  H23a H23b
+H1   C1
+H2   C2
+H3   C3
+H4   C4
+H8   C8
+H11a C11
+H11b C11
+H12  C12
+H13  C13
+H14  C14
+H15a C15
+H15b C15
+H16  C16
+H17a C17
+H17b C17
+H18a C18
+H18b C18
+H20b C20
+H20a C20
+H22  C22
+H23b C23
+H23a C23
+
+ring C1   C2   C3   C4   C5  C6
+ring C6   C7   C8   N9   C5
+ring C7   C17  C18  N19  C16
+ring C8   C13  C14  C15  C16  C7
+ring N19  C20  C21  C14  C15  C16
+ring N9   C10  C11  C12  C13  C8
+ring C12  O12  C23  C22  C21  C14  C13
